@@ -1,0 +1,64 @@
+<!-- Open the modal using ID.showModal() method -->
+<button class="btn" onclick="my_modal_1.showModal()">open modal</button>
+<dialog id="my_modal_1" class="modal">
+  <div class="modal-box">
+    <h3 class="text-lg font-bold">Hello!</h3>
+    <p class="py-4">Press ESC key or click the button below to close</p>
+    <div class="modal-action">
+      <form method="dialog">
+        <!-- if there is a button in form, it will close the modal -->
+        <button class="btn">Close</button>
+      </form>
+    </div>
+  </div>
+</dialog>
+
+
+ <div class="flex justify-center items-center space-x-8  flex-1 border-[1px] border-gray-400 p-6 rounded-md">
+            <!-- card Left img -->
+            <div>
+                <img class="h-5/6" src="./feni.png" alt="">
+            </div>
+            <!-- card-right-content -->
+            <div class="flex-1 space-y-3">
+                <!-- card coin -->
+                <div class="flex space-x-3">
+                    <div class=" flex items-center justify-center space-x-3 bg-gray-100 py-2 px-3 rounded-md">
+                        <img src="./coin.png" alt="">
+                    <p>  <span id="donation-amount-feni">0</span> BDT</p>
+                    </div>
+                </div>
+                <h1>Donate for Flood Relief in Feni,Bangladesh</h1>
+                <p> The recent floods in Feni have devastated local communities, leading to severe disruption and loss. Your generous donation will help provide immediate aid, including food, clean water, and medical supplies, to those affected by this calamity. Together, we can offer crucial support and help rebuild lives in the aftermath of this disaster. Every contribution counts towards making a real difference. Please consider donating today to assist those in urgent need.</p>
+               <!-- Donation Input -->
+                <div class="pt-12 ">
+                    <input id="donation-input-feni" class="border-[1px] border-gray-600 w-full py-3 px-4 rounded-md" placeholder="Write Donation Amount" type="text">
+                </div>
+                <div>
+                    <button id="donate-feni-btn" class="w-full bg-[#B4F461] py-3 px-4 rounded-md font-semibold text-xl ">Donate Now</button>
+
+                    
+                </div>
+            </div>
+        </div>
+
+
+
+
+           <div class="mx-auto text-center rounded-md">
+                    <dialog id="my_modal_1" class="modal px-16 py-8 rounded-md ">
+                        <div class="modal-box">
+                            <h3 class="text-2xl font-bold text-center">Congrates!</h3> <br>
+                            <img class="mx-auto" src="./coin.png" alt="">
+                            <p class="py-2">    You Have Donate for Humankind</p>
+                            <h2 class="text-xl font-bold">Successful</h2>
+                            <div class="modal-action">
+                            <form method="dialog">
+                                <!-- if there is a button in form, it will close the modal -->
+                                <button class="btn mt-2 bg-gray-100 p-3 font-semibold rounded-md ">Close Informition</button>
+                            </form>
+                            </div>
+                        </div>
+                        </dialog>
+                   </div>
+                  
