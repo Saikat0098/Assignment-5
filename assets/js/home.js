@@ -94,12 +94,19 @@ document.getElementById("donate-quota-btn").addEventListener("click" , function(
     
     if(donateQuotaInput > mainBalance || mainBalance <0 ){
         alert("not enough money for donation");
-        return ;
+         return ;
     }
      if(isNaN (donateQuotaInput) || donateQuotaInput <= 0 ){
         alert("invalid donation try again ");
         return;
      }
+
+     
+    //  if (donateQuotaInput > 0 || donateQuotaInput <= mainBalance){
+    //     document.getElementById('myModal').showModal();
+
+
+    //  }
     
     const donationDisplay = donateQuotaInput + donationAmountFeni ; 
     document.getElementById("donation-amount-quota").innerText = donationDisplay ; 
